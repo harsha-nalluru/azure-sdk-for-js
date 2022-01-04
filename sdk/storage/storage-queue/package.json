@@ -49,7 +49,7 @@
     "test:node": "npm run clean && npm run build:test && npm run unit-test:node",
     "test": "npm run clean && npm run build:test && npm run unit-test",
     "unit-test:browser": "dev-tool run test:browser",
-    "unit-test:node": "dev-tool run test:node-js-input -- --timeout 120000 \"dist-test/index.node.js\"",
+    "unit-test:node": "dev-tool run test:node-ts-input -- --timeout 120000  'test/*.spec.ts' 'test/node/*spec.ts'",
     "unit-test": "npm run unit-test:node && npm run unit-test:browser",
     "emulator-tests": "cross-env STORAGE_CONNECTION_STRING=UseDevelopmentStorage=true && npm run test:node"
   },
