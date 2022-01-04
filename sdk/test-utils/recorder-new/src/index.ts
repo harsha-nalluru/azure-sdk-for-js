@@ -6,7 +6,6 @@ export { relativeRecordingsPath } from "./utils/relativePathCalculator";
 export {
   SanitizerOptions,
   RecorderStartOptions,
-  delay,
   isLiveMode,
   isPlaybackMode,
   isRecordMode

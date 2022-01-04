@@ -303,12 +303,6 @@ export function isPlaybackMode() {
   return !isRecordMode() && !isLiveMode();
 }
 
-export function delay(millis: number): Promise<void> {
-  return isPlaybackMode()
-    ? Promise.resolve()
-    : new Promise((resolve) => setTimeout(resolve, millis));
-}
-
 /**
  * Loads the environment variables in both node and browser modes corresponding to the key-value pairs provided.
  *
